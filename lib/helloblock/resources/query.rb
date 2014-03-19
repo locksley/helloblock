@@ -29,6 +29,7 @@ module HelloBlock
         api_resource = API_PARAMETERS[resource] || resource
         query[:params][api_resource] = ids
       end
+
       determine_parent_resource
       self
     end
